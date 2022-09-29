@@ -1,0 +1,43 @@
+
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Faça seu login</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="https://getbootstrap.com/docs/4.0/examples/signin/signin.css" rel="stylesheet" crossorigin="anonymous">
+    <style>
+        #title{
+            text-align: center;
+        }
+        body{
+            background-color: #3e3e3e;
+            color: white;
+        }
+    </style>
+</head>
+<body cz-shortcut-listen="true">
+<div class="container">
+    <h1 id="title">Página de Login</h1>
+    <form class="form-signin" method="post" action="/login">
+       <!-- <h3 class="form-signin-heading">Faça seu login</h3> -->
+        <h1></h1>
+        <p>
+            <h4>Seu lindo nome</h4>
+            <label for="username" class="sr-only">Seu lindo nome</label>
+            <input type="text" id="username" name="username" class="form-control" placeholder="Nome de usuário" required="" autofocus="">
+        </p>
+        <p>
+        <h4>Sua senha secreta</h4>
+            <label for="password" class="sr-only">Sua senha secreta</label>
+            <input type="password" id="password" name="password" class="form-control" placeholder="Senha" required="">
+        </p>
+        <p>
+            <label for="remember-me" >Lembre de mim</label>
+            <input type="checkbox" id="remember-me" name="remember-me" class="form-control">
+        </p>
+        <button class="btn btn-lg btn-success btn-block" type="submit">Logar!</button>
+    </form>
+</div>
+</body></html>
